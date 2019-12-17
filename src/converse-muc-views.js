@@ -108,7 +108,7 @@ converse.plugins.add('converse-muc-views', {
             'cache_muc_messages': true,
             'locked_muc_nickname': false,
             'muc_disable_slash_commands': false,
-            'muc_show_join_leave': true,
+            'muc_show_join_leave': false,
             'muc_show_join_leave_status': true,
             'muc_mention_autocomplete_min_chars': 0,
             'roomconfig_whitelist': [],
@@ -705,7 +705,7 @@ converse.plugins.add('converse-muc-views', {
                 const changed = _.get(item, 'changed', {});
                 const keys = ['affiliation', 'bookmarked', 'jid', 'name', 'description', 'subject'];
                 if (item === null || _.intersection(Object.keys(changed), keys).length) {
-                    this.el.querySelector('.chat-head-chatroom').innerHTML = this.generateHeadingHTML();
+                   this.el.querySelector('.chat-head-chatroom').innerHTML = this.generateHeadingHTML();
                 }
             },
 

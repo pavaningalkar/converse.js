@@ -20,15 +20,22 @@
         auto_away: 300,
         auto_login: true,
         auto_register_muc_nickname: true,
-        // bosh_service_url: 'http://chat.example.org:5380/http-bind/',
+        auto_join_rooms: [{'jid': 'abc@conference.chat.gladminds.co', 'nick': 'Surender Singh' }],
+        bosh_service_url: 'http://chat.gladminds.co:5280/http-bind/',
         debug: true,
-        enable_smacks: true,
+        //enable_smacks: true,
         i18n: 'en',
         message_archiving: 'always',
-        muc_domain: 'conference.chat.example.org',
-        muc_respect_autojoin: true,
-        view_mode: 'fullscreen',
-        websocket_url: 'ws://chat.example.org:5380/xmpp-websocket',
+        muc_domain: 'conference.chat.gladminds.co',
+        allow_muc_invitations: false,
+        allow_muc: false,
+        visible_toolbar_buttons : {
+            'toggle_occupants': false
+        },
+        allow_logout:false,
+        //muc_respect_autojoin: true,
+       // view_mode: 'fullscreen',
+        //websocket_url: 'ws://chat.gladminds.co:5280/http-bind',
         whitelisted_plugins: ['converse-debug'],
     });
 </script>

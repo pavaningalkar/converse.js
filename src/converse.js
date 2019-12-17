@@ -38,13 +38,13 @@ import converse from "@converse/headless/converse-core";
 
 const WHITELISTED_PLUGINS = [
     'converse-autocomplete',
-    'converse-bookmark-views',
+    //'converse-bookmark-views',
     'converse-chatboxviews',
     'converse-chatview',
     'converse-controlbox',
     'converse-dragresize',
     'converse-emoji-views',
-    'converse-fullscreen',
+    //'converse-fullscreen',
     'converse-headline',
     'converse-mam-views',
     'converse-message-view',
@@ -52,14 +52,14 @@ const WHITELISTED_PLUGINS = [
     'converse-modal',
     'converse-muc-views',
     'converse-notification',
-    'converse-omemo',
-    'converse-profile',
+    //'converse-omemo',
+    //'converse-profile',
     'converse-push',
-    'converse-register',
-    'converse-roomslist',
-    'converse-rosterview',
+    //'converse-register',
+    //'converse-roomslist',
+    //'converse-rosterview',
     'converse-singleton',
-    'converse-uniview'
+    //'converse-uniview'
 ];
 
 const initialize = converse.initialize;

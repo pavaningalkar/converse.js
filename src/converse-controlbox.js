@@ -69,8 +69,8 @@ converse.plugins.add('converse-controlbox', {
      *
      * NB: These plugins need to have already been loaded via require.js.
      */
-    dependencies: ["converse-modal", "converse-chatboxes", "converse-rosterview", "converse-chatview"],
-
+    dependencies: ["converse-chatview"],
+    //dependencies: ["converse-modal", "converse-chatboxes", "converse-rosterview", "converse-chatview"],
     enabled (_converse) {
         return !_converse.singleton;
     },
